@@ -13,107 +13,181 @@
     <title>Frontend Mentor | Bookmark landing page</title>
     <link rel="stylesheet" href="./dist/styles.css" />
   </head>
-  <body>
-    <header>
-      <nav aria-label="primary-navigation">
+  <body class="relative">
+    <header class="con">
+      <nav
+        aria-label="primary-navigation"
+        class="flex items-center justify-between py-10"
+      >
         <img src="./images/logo-bookmark.svg" alt="logo-bookmark" />
-        <ul>
-          <li><a href="">FEATURES</a></li>
-          <li><a href="">PRICING</a></li>
-          <li><a href="">CONTACT</a></li>
-          <li><a href="">LOGIN</a></li>
+        <ul class="flex items-center gap-x-7">
+          <li class="transition-colors hover:text-SoftRed">
+            <a href="">FEATURES</a>
+          </li>
+          <li class="transition-colors hover:text-SoftRed">
+            <a href="">PRICING</a>
+          </li>
+          <li class="transition-colors hover:text-SoftRed">
+            <a href="">CONTACT</a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="cursor-pointer rounded-md border border-transparent bg-SoftRed px-5 py-2 text-white shadow-md transition-colors hover:border hover:border-solid hover:border-SoftRed hover:bg-transparent hover:text-SoftRed"
+              >LOGIN</a
+            >
+          </li>
         </ul>
       </nav>
-      <section>
-        <div>
+      <section class="grid min-h-[90vh] place-content-center">
+        <div class="flex items-center justify-between">
           <div>
-            <h1>A Simple Bookmark Manager</h1>
-            <p>
+            <h1 class="w-[85%] text-5xl font-bold text-VeryDarkBlue">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="my-5 w-[65%] text-GrayishBlue">
               A clean and simple interface to organize your favorite websites.
               Open a new browser tab and see your sites load instantly. Try it
               for free.
             </p>
-            <div>
-              <a href="#">Get it on Chrome</a>
-              <a href="#">Get it on FireFox</a>
+            <div class="flex gap-x-3">
+              <a
+                href="#"
+                class="rounded-md border border-transparent bg-SoftBlue px-5 py-2 text-white transition-colors hover:border-SoftBlue hover:bg-transparent hover:text-SoftBlue"
+                >Get it on Chrome</a
+              >
+              <a
+                href="#"
+                class="rounded-md border border-transparent bg-gray-200 px-5 py-2 shadow-md transition-colors hover:border-black hover:bg-transparent"
+                >Get it on FireFox</a
+              >
             </div>
           </div>
           <div>
-            <img src="./images/illustration-hero.svg" alt="illustration-hero" />
-            <div></div>
+            <img
+              src="./images/illustration-hero.svg"
+              alt="illustration-hero"
+              class="z-10"
+            />
+            <div
+              class="absolute right-0 -z-10 h-72 w-[30vw] -translate-y-60 rounded-l-full bg-SoftBlue"
+            ></div>
           </div>
         </div>
       </section>
     </header>
     <main>
       <section>
-        <div>
-          <h2>Features</h2>
-          <p>
-            Our aim is to make it quick and easy for you to access your favorite
-            websites. Your bookmarks sync between your devices so you can access
-            them on the go.
-          </p>
-        </div>
-        <div>
-          <div>
-            <h3>Simple Bookmarking</h3>
-            <h3>Speedy Searching</h3>
-            <h3>Easy Sharing</h3>
+        <div class="con">
+          <div class="mb-14 text-center">
+            <h2 class="mb-5 text-3xl font-bold text-VeryDarkBlue">Features</h2>
+            <p class="mx-auto w-[35%] text-GrayishBlue">
+              Our aim is to make it quick and easy for you to access your
+              favorite websites. Your bookmarks sync between your devices so you
+              can access them on the go.
+            </p>
           </div>
-          <div>
-            <div>
-              <div>
-                <img
-                  src="./images/illustration-features-tab-1.svg"
-                  alt="illustration-features-tab-1"
-                />
-                <div></div>
-              </div>
-              <div>
-                <h4>Bookmark in one click</h4>
-                <p>
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manage your favorite sites.
-                </p>
-                <a href="#">More Info</a>
-              </div>
+          <div class="mx-auto flex w-full flex-col items-center justify-center">
+            <div class="flex gap-x-20 border-b">
+              <button
+                class="border-b-4 border-b-SoftRed px-8 py-4 font-semibold text-VeryDarkBlue transition-colors"
+              >
+                Simple Bookmarking
+              </button>
+              <button
+                class="border-b-4 border-b-transparent px-8 py-4 font-semibold text-GrayishBlue transition-colors hover:text-SoftRed"
+              >
+                Speedy Searching
+              </button>
+              <button
+                class="border-b-4 border-b-transparent px-8 py-4 font-semibold text-GrayishBlue transition-colors hover:text-SoftRed"
+              >
+                Easy Sharing
+              </button>
             </div>
-            <div>
-              <div>
-                <img
-                  src="./images/illustration-features-tab-2.svg"
-                  alt="illustration-features-tab-2"
-                />
-                <div></div>
+            <div class="mb-32">
+              <div class="relative mt-20">
+                <div class="flex items-center justify-between gap-x-36">
+                  <div>
+                    <img
+                      src="./images/illustration-features-tab-1.svg"
+                      alt="illustration-features-tab-1"
+                      class="w-[50rem]"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="mx-auto text-3xl font-bold text-VeryDarkBlue">
+                      Bookmark in one click
+                    </h4>
+                    <p class="my-6 text-GrayishBlue">
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favorite sites.
+                    </p>
+                    <a
+                      href="#"
+                      class="rounded-md bg-SoftBlue px-6 py-3 text-white"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="invisible absolute top-0 flex items-center justify-between gap-x-36"
+                >
+                  <div>
+                    <img
+                      src="./images/illustration-features-tab-2.svg"
+                      alt="illustration-features-tab-2"
+                      class="w-[50rem]"
+                    />
+                    <div></div>
+                  </div>
+                  <div>
+                    <h4 class="mx-auto text-3xl font-bold text-VeryDarkBlue">
+                      Intelligent search
+                    </h4>
+                    <p class="my-6 text-GrayishBlue">
+                      Our powerful search feature will help you find saved sites
+                      in no time at all. No need to trawl through all of your
+                      bookmarks.
+                    </p>
+                    <a
+                      href="#"
+                      class="rounded-md bg-SoftBlue px-6 py-3 text-white"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="invisible absolute top-0 flex items-center justify-between gap-x-36"
+                >
+                  <div>
+                    <img
+                      src="./images/illustration-features-tab-3.svg"
+                      alt="illustration-features-tab-3"
+                      class="w-[50rem]"
+                    />
+                    <div></div>
+                  </div>
+                  <div>
+                    <h4 class="mx-auto text-3xl font-bold text-VeryDarkBlue">
+                      Share your bookmarks Easily
+                    </h4>
+                    <p class="my-6 text-GrayishBlue">
+                      share your bookmarks and collections with others. Create a
+                      shareable link that you can send at the click of a button.
+                    </p>
+                    <a
+                      href="#"
+                      class="rounded-md bg-SoftBlue px-6 py-3 text-white"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
               </div>
-              <div>
-                <h4>Intelligent search</h4>
-                <p>
-                  Our powerful search feature will help you find saved sites in
-                  no time at all. No need to trawl through all of your
-                  bookmarks.
-                </p>
-                <a href="#">More Info</a>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img
-                  src="./images/illustration-features-tab-3.svg"
-                  alt="illustration-features-tab-3"
-                />
-                <div></div>
-              </div>
-              <div>
-                <h4>Share your bookmarks Easily</h4>
-                <p>
-                  share your bookmarks and collections with others. Create a
-                  shareable link that you can send at the click of a button.
-                </p>
-                <a href="#">More Info</a>
-              </div>
+              <div
+                class="absolute left-0 -z-10 h-80 w-[30vw] -translate-y-60 rounded-r-full bg-SoftBlue"
+              ></div>
             </div>
           </div>
         </div>
